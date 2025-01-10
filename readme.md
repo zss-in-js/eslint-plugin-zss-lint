@@ -1,4 +1,4 @@
-# eslint-plugin-css-camel-sort
+# eslint-plugin-object-css
 
 ![NPM Version](https://img.shields.io/npm/v/eslint-plugin-object-css?color=brightgreen)
 ![NPM License](https://img.shields.io/npm/l/eslint-plugin-object-css?color=yellow)
