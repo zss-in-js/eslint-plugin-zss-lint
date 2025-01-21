@@ -1,5 +1,11 @@
 # eslint-plugin-object-css
 
+## 0.3.0
+
+### Minor Changes
+
+- 7ad815f: Almost compatible with eslint9, and fixed to accept linear-gradient functions for background property
+
 ## 0.2.0
 
 ### Minor Changes
