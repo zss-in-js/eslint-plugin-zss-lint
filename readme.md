@@ -3,7 +3,7 @@
 ![NPM Version](https://img.shields.io/npm/v/eslint-plugin-object-css?color=brightgreen)
 ![NPM License](https://img.shields.io/npm/l/eslint-plugin-object-css?color=yellow)
 
-ESLint plugin for Object CSS properties order and valid value verification
+ESLint plugin for object CSS properties order and valid value verification
 
 ## Installation
 
@@ -50,4 +50,34 @@ If you want to set security levels individually, set them in the rules.
     "object-css/valid-value": "error"
   }
 }
+```
+
+## Supports eslint9
+
+### eslint.config.mjs
+
+```mjs
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
+import { FlatCompat } from '@eslint/eslintrc'
+import objectCss from 'eslint-plugin-object-css'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+})
+
+const eslintConfig = [
+  ...compat.extends('plugin:object-css/recommended'),
+  {
+    files: ['**/*.{ts,js,jsx,tsx}'],
+    plugins: {
+      'object-css': objectCss,
+    },
+  },
+]
+
+export default eslintConfig
 ```
