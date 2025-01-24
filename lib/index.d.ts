@@ -1,19 +1,20 @@
-import { Rule } from 'eslint'
+import { ESLint, Linter, Rule } from 'eslint'
 
-declare const _default: {
+declare const plugin: ESLint.Plugin & {
+  meta: {
+    name: string
+    version: string
+  }
   rules: {
     'recess-order': Rule.RuleModule
     'valid-value': Rule.RuleModule
   }
   configs: {
-    recommended: {
-      plugins: string[]
-      rules: {
-        'object-css/recess-order': string
-        'object-css/valid-value': string
-      }
-    }
+    recommended: Linter.LegacyConfig
+  }
+  flatConfigs: {
+    recommended: Linter.Config<Linter.RulesRecord>
   }
 }
 
-export = _default
+export = plugin
