@@ -1,5 +1,11 @@
 # eslint-plugin-object-css
 
+## 0.4.0
+
+### Minor Changes
+
+- 6634f2e: Fully compatible with eslint 8 and below and 9 and above.
+
 ## 0.3.0
 
 ### Minor Changes
