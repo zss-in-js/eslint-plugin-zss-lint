@@ -31,7 +31,7 @@ Add object-css to the plugins section of your `.eslintrc` configuration file. Yo
 
 ## Recommended
 
-As for the recommended rules, two rules will be enabled with a warning.
+As for the recommended rules, two rules will be enabled with the recess-order is "warn", valid-value is "error".
 
 ```json
   "extends": [
@@ -52,32 +52,34 @@ If you want to set security levels individually, set them in the rules.
 }
 ```
 
-## Supports eslint9
+※ If you use typescript you will need a suitable parser like typescript-eslint.  
+If you are using eslint v8 and below, set `"eslint.useESLintClass": true` in vscode's setting.json.
+
+## Supports ESLint v9 and above
+
+```sh
+npm install @eslint/js typescript-eslint --save-dev
+```
+
+If you are using eslint 9 or higher, do not use this `useESLintClass`.
 
 ### eslint.config.mjs
 
-```mjs
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-import { FlatCompat } from '@eslint/eslintrc'
+The following file is a configuration file that contains recommended settings for TypeScript and eslint.
+
+```js
+import eslint from '@eslint/js'
+import tseslint from 'typescript-eslint'
 import objectCss from 'eslint-plugin-object-css'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-})
-
-const eslintConfig = [
-  ...compat.extends('plugin:object-css/recommended'),
+const eslintConfig = tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  objectCss.flatConfigs.recommended,
   {
-    files: ['**/*.{ts,js,jsx,tsx}'],
-    plugins: {
-      'object-css': objectCss,
-    },
+    files: ['**/*.{js,jsx,ts,tsx}'],
   },
-]
+)
 
 export default eslintConfig
 ```
