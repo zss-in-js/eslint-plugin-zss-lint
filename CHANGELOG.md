@@ -1,5 +1,11 @@
 # eslint-plugin-object-css
 
+## 0.4.1
+
+### Patch Changes
+
+- c4e5e43: fix: background none
+
 ## 0.4.0
 
 ### Minor Changes
