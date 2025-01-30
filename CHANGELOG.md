@@ -1,5 +1,11 @@
 # eslint-plugin-object-css
 
+## 0.4.3
+
+### Patch Changes
+
+- 5be5f50: chore: readme keywords update
+
 ## 0.4.2
 
 ### Patch Changes
