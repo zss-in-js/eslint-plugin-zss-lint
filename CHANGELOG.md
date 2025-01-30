@@ -1,5 +1,11 @@
 # eslint-plugin-object-css
 
+## 0.4.2
+
+### Patch Changes
+
+- 23a976d: fix: rgb rgba hsl hsla hwb for percentage, lab oklab rm angle
+
 ## 0.4.1
 
 ### Patch Changes
