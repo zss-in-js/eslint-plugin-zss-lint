@@ -11,7 +11,8 @@
     "eslintplugin",
     "eslint-plugin",
     "css",
-    "object",
+    "vue",
+    "react",
     "css-in-js"
   ],
   "devDependencies": {
