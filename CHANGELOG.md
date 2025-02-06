@@ -1,5 +1,11 @@
 # eslint-plugin-object-css
 
+## 0.5.0
+
+### Minor Changes
+
+- 80c2d16: fix: Moderate fix filterRegex, colorValue, borderRadius support percentage
+
 ## 0.4.3
 
 ### Patch Changes
