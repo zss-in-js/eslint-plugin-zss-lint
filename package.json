@@ -4,6 +4,9 @@
   "description": "ESlint plugin for object CSS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "repository": "zss-in-js/eslint-plugin-object-css",
   "license": "ISC",
   "author": "Refirst",
