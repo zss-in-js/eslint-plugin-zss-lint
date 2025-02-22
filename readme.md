@@ -61,7 +61,7 @@ If you are using eslint v8 and below, set `"eslint.useESLintClass": true` in vsc
 npm install @eslint/js typescript-eslint --save-dev
 ```
 
-If you are using eslint 9 or higher, do not use this `useESLintClass`.
+If you are using eslint 9 or above, do not use this `useESLintClass`.
 
 ### eslint.config.mjs
 
