@@ -2,11 +2,6 @@
   "name": "eslint-plugin-object-css",
   "version": "0.5.0",
   "description": "ESlint plugin for object CSS",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
   "repository": "zss-in-js/eslint-plugin-object-css",
   "license": "ISC",
   "author": "Refirst",
@@ -18,6 +13,11 @@
     "vue",
     "react",
     "css-in-js"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
   ],
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
