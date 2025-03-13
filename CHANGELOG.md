@@ -1,5 +1,11 @@
 # eslint-plugin-object-css
 
+## 0.5.2
+
+### Patch Changes
+
+- 116b9fe: fix: readme
+
 ## 0.5.1
 
 ### Patch Changes
