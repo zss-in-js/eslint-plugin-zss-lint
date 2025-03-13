@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-object-css",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "ESlint plugin for object CSS",
   "repository": "zss-in-js/eslint-plugin-object-css",
   "license": "ISC",
