@@ -77,7 +77,7 @@ const eslintConfig = tseslint.config(
   ...tseslint.configs.strict
   objectCss.flatConfigs.recommended
   {
-    files: ['**/*.{jsjsxtstsx}']
+    files: ['**/*.{ts,tsx}']
   }
 )
 
@@ -114,3 +114,7 @@ Validation includes other standard properties.
 - transition
 - viewTransitionName
 - willChange
+
+## License
+
+ISC.
