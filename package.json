@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-stylefix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESlint plugin for style fixing and error detection.",
   "repository": "zss-in-js/eslint-plugin-stylefix",
   "license": "MIT",
