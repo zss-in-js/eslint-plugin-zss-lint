@@ -1,7 +1,7 @@
 # eslint-plugin-stylefix
 
 ![NPM Version](https://img.shields.io/npm/v/eslint-plugin-stylefix?color=brightgreen)
-![NPM License](https://img.shields.io/npm/l/eslint-plugin-stylefix?color=yellow)
+![NPM License](https://img.shields.io/npm/l/eslint-plugin-stylefix?color=blue)
 
 ESlint plugin for style fixing and error detection.
 
