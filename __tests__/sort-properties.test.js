@@ -1,9 +1,9 @@
-const { RuleTester } = require('eslint');
-const rule = require('../lib/rules/recess-order');
+const { RuleTester } = require('eslint')
+const rule = require('../lib/rules/sort-properties')
 
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester()
 
-ruleTester.run('sort-css-properties', rule, {
+ruleTester.run('sort-properties', rule, {
   valid: [
     {
       code: 'const styles = { position: "absolute", top: "0", right: "0", bottom: "0", left: "0", display: "block" };',
@@ -42,4 +42,4 @@ ruleTester.run('sort-css-properties', rule, {
       },
     },
   ],
-});
+})

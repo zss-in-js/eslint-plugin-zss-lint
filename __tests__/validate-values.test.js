@@ -1,9 +1,9 @@
-const { RuleTester } = require('eslint');
-const rule = require('../lib/rules/valid-value');
+const { RuleTester } = require('eslint')
+const rule = require('../lib/rules/validate-values')
 
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester()
 
-ruleTester.run('validate-value', rule, {
+ruleTester.run('validate-values', rule, {
   valid: [
     // position: value is valid
     { code: "const styles = { position: 'absolute' };" },
@@ -24,7 +24,8 @@ ruleTester.run('validate-value', rule, {
       code: "const styles = { position: 'center' };",
       errors: [
         {
-          message: "'position' has an invalid value 'center'. Valid values: static, relative, absolute, fixed, sticky",
+          message:
+            "'position' has an invalid value 'center'. Valid values: static, relative, absolute, fixed, sticky",
         },
       ],
       settings: {
@@ -36,7 +37,8 @@ ruleTester.run('validate-value', rule, {
       code: "const styles = { position: 'none' };",
       errors: [
         {
-          message: "'position' has an invalid value 'none'. Valid values: static, relative, absolute, fixed, sticky",
+          message:
+            "'position' has an invalid value 'none'. Valid values: static, relative, absolute, fixed, sticky",
         },
       ],
       settings: {
@@ -69,4 +71,4 @@ ruleTester.run('validate-value', rule, {
       },
     },
   ],
-});
+})

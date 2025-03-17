@@ -1,17 +1,28 @@
 {
-  "name": "eslint-plugin-object-css",
-  "version": "0.5.2",
-  "description": "ESlint plugin for object CSS",
-  "repository": "zss-in-js/eslint-plugin-object-css",
-  "license": "ISC",
+  "name": "eslint-plugin-stylefix",
+  "version": "0.0.1",
+  "description": "ESlint plugin for style fixing and error detection.",
+  "repository": "zss-in-js/eslint-plugin-stylefix",
+  "license": "MIT",
   "author": "Refirst",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin",
-    "css",
+    "style",
+    "styles",
+    "fixing",
+    "property",
+    "properties",
+    "sort",
+    "sorting",
+    "value",
+    "values",
+    "valid",
+    "validate",
     "vue",
     "react",
+    "object",
     "css-in-js"
   ],
   "main": "lib/index.js",
@@ -20,7 +31,6 @@
     "lib/"
   ],
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.10",
     "eslint": "^9.15.0",
     "jest": "^29.7.0"

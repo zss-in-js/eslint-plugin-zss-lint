@@ -1,9 +1,9 @@
-# eslint-plugin-object-css
+# eslint-plugin-stylefix
 
-![NPM Version](https://img.shields.io/npm/v/eslint-plugin-object-css?color=brightgreen)
-![NPM License](https://img.shields.io/npm/l/eslint-plugin-object-css?color=yellow)
+![NPM Version](https://img.shields.io/npm/v/eslint-plugin-stylefix?color=brightgreen)
+![NPM License](https://img.shields.io/npm/l/eslint-plugin-stylefix?color=yellow)
 
-ESLint plugin for object CSS properties order and valid value verification.
+ESlint plugin for style fixing and error detection.
 
 ## Installation
 
@@ -13,29 +13,29 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next install `eslint-plugin-object-css`:
+Next install `eslint-plugin-stylefix`:
 
 ```sh
-npm install eslint-plugin-object-css --save-dev
+npm i --save-dev eslint-plugin-stylefix
 ```
 
 ## Usage
 
-Add object-css to the plugins section of your `.eslintrc` configuration file. You can omit the eslint-plugin- prefix:
+Add stylefix to the plugins section of your `.eslintrc` configuration file. You can omit the eslint-plugin- prefix:
 
 ```json
 {
-  "plugins": ["object-css"]
+  "plugins": ["stylefix"]
 }
 ```
 
 ## Recommended
 
-As for the recommended rules two rules will be enabled with the recess-order is "warn" valid-value is "error".
+As for the recommended rules two rules will be enabled with the sort-properties and validate-values is "warn".
 
 ```json
   "extends": [
-    "plugin:object-css/recommended"
+    "plugin:stylefix/recommended"
   ]
 ```
 
@@ -46,14 +46,14 @@ If you want to set security levels individually set them in the rules.
 ```json
 {
   "rules": {
-    "object-css/recess-order": "warn"
-    "object-css/valid-value": "error"
+    "stylefix/sort-properties": "warn",
+    "stylefix/validate-values": "warn"
   }
 }
 ```
 
-※ If you use typescript you will need a suitable parser like typescript-eslint.  
-If you are using eslint v8 and below set `"eslint.useESLintClass": true` in vscode's setting.json.
+※ If you use typescript you will need a suitable parser like `typescript-eslint`.  
+And if you are using eslint v8 and lower set `"eslint.useESLintClass": true` in vscode's setting.json.
 
 ## Supports ESLint v9 and higher
 
@@ -61,21 +61,21 @@ If you are using eslint v8 and below set `"eslint.useESLintClass": true` in vsco
 npm install @eslint/js typescript-eslint --save-dev
 ```
 
-If you are using eslint 9 or higher do not use this `useESLintClass`.
+If you are using eslint 9 or higher `do not use` this `useESLintClass`.
 
-### Example config mjs
+### Usage (Flat Config `eslint.config.mjs`)
 
 The following file is a configuration file that contains recommended settings for TypeScript and eslint.
 
 ```js
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
-import objectCss from 'eslint-plugin-object-css'
+import stylefixlint from 'eslint-plugin-stylefix'
 
 const eslintConfig = tseslint.config(
   eslint.configs.recommended
   ...tseslint.configs.strict
-  objectCss.flatConfigs.recommended
+  stylefixlint.flatConfigs.recommended
   {
     files: ['**/*.{ts,tsx}']
   }
@@ -86,11 +86,11 @@ export default eslintConfig
 
 ## Rule Description
 
-### recess-order
+### sort-properties
 
-It is created based on the sorting of [stylelint-config-recess-order](https://www.npmjs.com/package/stylelint-config-recess-order).
+Automatically sorts CSS properties using the predefined recess order for consistent, maintainable styles and standardized grouping that improves readability and collaboration.
 
-### valid-value
+### validate-values
 
 These are not validated as they have names with unique identifiers.  
 Validation includes other standard properties.
@@ -117,4 +117,4 @@ Validation includes other standard properties.
 
 ## License
 
-ISC.
+MIT.

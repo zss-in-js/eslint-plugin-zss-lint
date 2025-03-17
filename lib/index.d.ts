@@ -1,13 +1,9 @@
 import { ESLint, Linter, Rule } from 'eslint'
 
 declare const plugin: ESLint.Plugin & {
-  meta: {
-    name: string
-    version: string
-  }
   rules: {
-    'recess-order': Rule.RuleModule
-    'valid-value': Rule.RuleModule
+    'sort-properties': Rule.RuleModule
+    'validate-values': Rule.RuleModule
   }
   configs: {
     recommended: Linter.LegacyConfig
