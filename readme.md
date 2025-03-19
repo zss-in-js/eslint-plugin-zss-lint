@@ -1,7 +1,7 @@
-# eslint-plugin-stylefix
+# eslint-plugin-zss-lint
 
-![NPM Version](https://img.shields.io/npm/v/eslint-plugin-stylefix?color=brightgreen)
-![NPM License](https://img.shields.io/npm/l/eslint-plugin-stylefix?color=blue)
+![NPM Version](https://img.shields.io/npm/v/eslint-plugin-zss-lint?color=brightgreen)
+![NPM License](https://img.shields.io/npm/l/eslint-plugin-zss-lint?color=blue)
 
 ESlint plugin for style fixing and error detection.
 
@@ -13,19 +13,19 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next install `eslint-plugin-stylefix`:
+Next install `eslint-plugin-zss-lint`:
 
 ```sh
-npm i --save-dev eslint-plugin-stylefix
+npm i --save-dev eslint-plugin-zss-lint
 ```
 
 ## Usage
 
-Add stylefix to the plugins section of your `.eslintrc` configuration file. You can omit the eslint-plugin- prefix:
+Add zss-lint to the plugins section of your `.eslintrc` configuration file. You can omit the eslint-plugin- prefix:
 
 ```json
 {
-  "plugins": ["stylefix"]
+  "plugins": ["zss-lint"]
 }
 ```
 
@@ -35,7 +35,7 @@ As for the recommended rules two rules will be enabled with the sort-properties 
 
 ```json
   "extends": [
-    "plugin:stylefix/recommended"
+    "plugin:zss-lint/recommended"
   ]
 ```
 
@@ -46,8 +46,8 @@ If you want to set security levels individually set them in the rules.
 ```json
 {
   "rules": {
-    "stylefix/sort-properties": "warn",
-    "stylefix/validate-values": "warn"
+    "zss-lint/sort-properties": "warn",
+    "zss-lint/validate-values": "warn"
   }
 }
 ```
@@ -70,12 +70,12 @@ The following file is a configuration file that contains recommended settings fo
 ```js
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
-import stylefixlint from 'eslint-plugin-stylefix'
+import zsslint from 'eslint-plugin-zss-lint'
 
 const eslintConfig = tseslint.config(
   eslint.configs.recommended
   ...tseslint.configs.strict
-  stylefixlint.flatConfigs.recommended
+  zsslint.flatConfigs.recommended
   {
     files: ['**/*.{ts,tsx}']
   }
@@ -84,7 +84,7 @@ const eslintConfig = tseslint.config(
 export default eslintConfig
 ```
 
-## Rule Description
+## Rules Description
 
 ### sort-properties
 
@@ -117,4 +117,4 @@ Validation includes other standard properties.
 
 ## License
 
-MIT.
+eslint-plugin-zss-lint is [MIT licensed](https://github.com/zss-in-js/plumeria/blob/main/license).
