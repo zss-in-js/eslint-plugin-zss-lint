@@ -3,7 +3,7 @@
 ![NPM Version](https://img.shields.io/npm/v/eslint-plugin-zss-lint?color=brightgreen)
 ![NPM License](https://img.shields.io/npm/l/eslint-plugin-zss-lint?color=blue)
 
-ESlint plugin for style fixing and error detection.
+ESlint plugin for style object fixing and error detection.
 
 ## Installation
 
