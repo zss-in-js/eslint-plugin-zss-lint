@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-zss-lint",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "ESlint plugin for style object fixing and error detection.",
   "repository": "zss-in-js/eslint-plugin-zss-lint",
   "license": "MIT",
