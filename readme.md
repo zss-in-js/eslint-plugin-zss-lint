@@ -115,6 +115,11 @@ Validation includes other standard properties.
 - viewTransitionName
 - willChange
 
+### no-unused-keys
+
+Warns about unused keys in objects inside functions.  
+This only affects functions if they are written directly in the component file.
+
 ## License
 
 eslint-plugin-zss-lint is [MIT licensed](https://github.com/zss-in-js/plumeria/blob/main/license).
