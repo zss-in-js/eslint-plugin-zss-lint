@@ -4,6 +4,7 @@ declare const plugin: ESLint.Plugin & {
   rules: {
     'sort-properties': Rule.RuleModule
     'validate-values': Rule.RuleModule
+    'no-unused-keys': Rule.RuleModule
   }
   configs: {
     recommended: Linter.LegacyConfig
