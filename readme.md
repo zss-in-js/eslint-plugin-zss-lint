@@ -31,7 +31,7 @@ Add zss-lint to the plugins section of your `.eslintrc` configuration file. You 
 
 ## Recommended
 
-As for the recommended rules two rules will be enabled with the sort-properties and validate-values is "warn".
+As for the recommended rules three rules will be enabled with the sort-properties and validate-values and no-unused-keys is "warn".
 
 ```json
   "extends": [
@@ -47,7 +47,8 @@ If you want to set security levels individually set them in the rules.
 {
   "rules": {
     "zss-lint/sort-properties": "warn",
-    "zss-lint/validate-values": "warn"
+    "zss-lint/validate-values": "warn",
+    "zss-lint/no-unused-keys": "warn"
   }
 }
 ```
